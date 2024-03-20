@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password generator - Anjal</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        Generate a<br />
+        <span>"Random password"</span>
+      </h1>
+      <div class="display">
+        <input type="text" id="password" placeholder="Password" />
+        <img
+          src="copyimage.png"
+          class="copyimage"
+          id="copyimage"
+          onclick="copyFx()"
+        />
+      </div>
+      <button class="genbutton" onclick="createPassword()">
+        <img src="generate img.png" class="generatorimg" />Generate password
+      </button>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
